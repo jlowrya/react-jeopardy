@@ -21,9 +21,9 @@ class QuestionCard extends Component{
         console.log('STATE ', this.state)
         return (
                 this.state.answered ?
-                <h1>{this.state.question}</h1> 
+                <div>{this.state.question}</div> 
                 :
-                <h1 onClick={this.answerQuestion}>{this.state.value}</h1>
+                <div onClick={this.answerQuestion}>{this.state.value}</div>
         )
     }
 }
